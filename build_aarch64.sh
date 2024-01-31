@@ -6,7 +6,7 @@ echo $ROOT_DIR
 function build_gflags() {
   cd gflags
   mkdir -p build-$ARCH && cd build-$ARCH
-  cmake \-std=c++11 
+  cmake \
     -DARCH="$ARCH" \
     -DCMAKE_TOOLCHAIN_FILE="$ROOT_DIR/linux.cmake" \
     -DCMAKE_INSTALL_PREFIX="$INSTALL_PATH" \
